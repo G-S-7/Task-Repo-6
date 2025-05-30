@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            float: left;
+            height: 30%;
+            width: 30%;
+            margin: 40px;
+        }
+        .c1{
+            vertical-align: text-top;
+            padding-right: 40px;
+        }
+        form{
+            vertical-align: top;
+        }
+    </style>
+</head>
+    
+<body>
+    <img src="\IMG-3.jpg" alt="Doctor">
+    <center>
+        <h1>Doctor Appointment Form</h1>
+    </center>
+    <hr color="red">
+    <form action="/submit-form.js"> <table >
+        <tr>
+        <td class="c1"><label for="date"> Appointment Date</td>
+        <td><input type="date"></label></td>
+        <br></tr><tr>
+        <td class="c1"><label for="time"> Appointment Time</td>
+        <td><input type="time"></label></td>
+        <br></tr><tr>
+        <td class="c1"><label for="Name"> Name </label></td>
+        <td><input type="text" value="First" ></td>
+        <td><input type="text" value="Last"></td>
+        <br></tr><tr>
+        <td class="c1"><label for="gender"> Gender</label></td>
+        <td><input type="radio"> Male</td>
+        <td><input type="radio"> Female</td>
+        <br></tr><tr>
+        <td class="c1"><label for="phno">Phone Number</label></td>
+        <td><input type="number" value="####"></td>
+        <br></tr>
+        <td class="c1"><label for="Address">Address</label></td>
+        <td><input type="text" value="city"> </td>
+        <td><input type="text" value="state"> </td>
+        <br><tr>
+        <td class="c1"><label for="query">Your Query</label></td>
+        <td><textarea name="query" id="q"> </textarea></td>
+        <br></tr><tr>
+        <td class="c1"><label for="type">Appointment Type</label></td>
+        <td >Select which appointment type(s) you require <br>
+        <input type="checkbox"> Cervix check-up <br>
+        <input type="checkbox"> Heart check-up <br>
+        <input type="checkbox"> Eye check-up <br>
+        <input type="checkbox"> Hearing check-up <br> <br>
+        <input type="submit" value="Send"></td></tr>
+  </table>  </form>
+</body>
+
+</html>
